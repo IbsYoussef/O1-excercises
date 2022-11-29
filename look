@@ -1,1 +1,1 @@
-ls -name z && a!
+find -name z && a!
