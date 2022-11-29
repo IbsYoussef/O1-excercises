@@ -1,1 +1,1 @@
-ls -d a
+find . -type f -name "a"
