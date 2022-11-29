@@ -1,1 +1,1 @@
-find -name -d '*.sh'
+find -d -name '*.sh'
