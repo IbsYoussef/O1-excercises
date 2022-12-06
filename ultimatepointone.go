@@ -1,13 +1,16 @@
 package piscine
 
-// Trial one
+// package main
 
-func main() {
+import (
+	"fmt"
+)
+
+func UltimatePointOne() {
+	a := 0
+	b := &a
+	n := &b
+
+	fmt.Println(&n)
+	fmt.Println(a)
 }
-
-func UltimatePoint(n ***int) {
-	num := 1
-	***n = num
-}
-
-// Trial two
