@@ -2,6 +2,8 @@ package piscine
 
 // package main
 
+// Printcomb code
+
 import "github.com/01-edu/z01"
 
 func PrintComb() {
