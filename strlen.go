@@ -1,9 +1,8 @@
 package piscine
 
 import (
-	"unicode/utf8"
 	"fmt"
-	"piscine"
+	"unicode/utf8"
 )
 
 // package main
@@ -11,7 +10,8 @@ import (
 // func main (){
 // }
 
-func (s string) int{
-	s := piscine.Strlen("Hello World")
-	fmt.Println(s, utf8.RuneCountInString(str))
+func StrLen(s string) int {
+	I := ("Hello World")
+	fmt.Println(I)
+	fmt.Println(utf8.RuneCountInString(s))
 }
