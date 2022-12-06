@@ -1,17 +1,16 @@
-package piscine
-
-import (
-	"fmt"
-	"unicode/utf8"
-)
+package pisicne
 
 // package main
 
-// func main (){
-// }
+import (
+	"piscine"
 
-func StrLen(s string) int {
-	I := ("Hello World")
-	fmt.Println(I)
-	fmt.Println(utf8.RuneCountInString(s))
+	"github.com/01-edu/z01"
+)
+
+// func main(){}
+
+func StrLen(s string) {
+	l := piscine.StrLen("Hello World!")
+	z01.PrintRune(l)
 }
