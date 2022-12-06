@@ -3,8 +3,6 @@ package pisicne
 // package main
 
 import (
-	"piscine"
-
 	"github.com/01-edu/z01"
 )
 
