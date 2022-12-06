@@ -2,7 +2,7 @@ package piscine
 
 // package main
 
-// Printcomb code
+// Printcomb code ..
 
 import "github.com/01-edu/z01"
 
