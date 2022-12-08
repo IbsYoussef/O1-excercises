@@ -1,11 +1,5 @@
 package piscine
 
-// package main
-
-// Printcomb code ..
-
-// Hi 
-
 import "github.com/01-edu/z01"
 
 func main() {
