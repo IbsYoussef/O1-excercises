@@ -2,6 +2,8 @@ package piscine
 
 import "github.com/01-edu/z01"
 
+// func main() {}
+
 func Printcomb() {
 	for i := '0'; i <= '9'; i++ {
 		for j := '0'; j <= '9'; j++ {
