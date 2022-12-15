@@ -49,5 +49,3 @@ func main() {
 		printTextFile(string(bytes))
 	}
 }
-
-// Error
