@@ -18,5 +18,3 @@ func PrintComb2() {
 		}
 	}
 }
-
-// Trial
