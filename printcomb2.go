@@ -8,7 +8,7 @@ func PrintComb2() {
 			z01.PrintRune(i)
 			z01.PrintRune(j)
 			z01.PrintRune(' ')
-			if j%2 == 0 {
+			if j%2 == 1 {
 				z01.PrintRune(',')
 			}
 		}
