@@ -1,12 +1,6 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
-
-func main() {
-	PrintNbr(900)
-	PrintNbr(596)
-	PrintNbr(274)
-}
 
 func PrintNbr(n int) {
 	var save int
