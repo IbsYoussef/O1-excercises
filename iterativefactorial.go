@@ -1,5 +1,7 @@
 package piscine
 
+// package main
+
 func IterativeFactorial(nb int) int {
 	result := 1
 	if nb < 0 || nb > 20 {
