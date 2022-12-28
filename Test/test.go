@@ -1,34 +1,20 @@
 package main
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func main() {
-	PrintNbr(900)
-	PrintNbr(596)
-	PrintNbr(274)
+	fmt.Println(IterativeFactorial(6))
 }
 
-func PrintNbr(n int) {
-	var save int
-	var tableau []int
-	var conversion int
-
-	if n < 0 {
-		z01.PrintRune('-')
+func IterativeFactorial(nb int) int {
+	result := 1
+	if nb < 0 || nb > 20 {
+		return 0
+	} else if nb == 0 {
+		return 1
 	}
-	if n == 0 {
-		z01.PrintRune('0')
+	for i := 0; i <= nb; i++ {
+		result *= i
 	}
-	for n != 0 {
-		save = n % 10
-		if save < 0 {
-			save = -save
-		}
-		tableau = append(tableau, save)
-		n /= 10
-	}
-	for i := len(tableau) - 1; i >= 0; i-- {
-		conversion = tableau[i] + 48
-		z01.PrintRune(rune(conversion))
-	}
+	return result
 }
