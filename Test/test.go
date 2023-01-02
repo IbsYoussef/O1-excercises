@@ -1,17 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
 
 func main() {
-	fmt.Println(Sqrt(64))
+	z01.PrintRune(FirstRune("Hello"))
 }
 
-func Sqrt(nb int) int {
-	for i := nb; i > 0; i-- {
-		root := i * i
-		if root == nb {
-			return i
-		}
-	}
-	return 0
+func FirstRune(s string) rune {
+	FirstRuneLetter := []rune(s)
+	result := FirstRuneLetter[0]
+	return result
 }
