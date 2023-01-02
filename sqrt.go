@@ -1,11 +1,11 @@
 package piscine
 
 func Sqrt(nb int) int {
-	if nb == 0 {
-		return 0
+	for i := nb; i > 0; i-- {
+		root := i * i
+		if root == nb {
+			return i
+		}
 	}
-	if nb == 1 {
-		return 1
-	}
-	return nb / Sqrt(nb)
+	return 0
 }
