@@ -5,6 +5,6 @@ func NRune(s string, n int) rune {
 		return 0
 	}
 	Change := []rune(s)
-	NCharacterToFind := Change[n-1]
+	NCharacterToFind := Change[n]
 	return NCharacterToFind
 }
