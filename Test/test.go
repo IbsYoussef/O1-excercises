@@ -1,15 +1,13 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	z01.PrintRune(FirstRune("Hello"))
+	z01.PrintRune(LastRune("Why"))
 }
 
-func FirstRune(s string) rune {
-	FirstRuneLetter := []rune(s)
-	result := FirstRuneLetter[0]
-	return result
+func LastRune(s string) rune {
+	Change := []rune(s)
+	LastCharacter := Change[len(s)-1]
+	return LastCharacter
 }
