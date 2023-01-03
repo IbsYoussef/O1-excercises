@@ -1,12 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println(AlphaCount("HGHGJJDFJFODJDK 1234422 !!!"))
-}
+package piscine
 
 func AlphaCount(s string) int {
 	Slice := []rune(s)
