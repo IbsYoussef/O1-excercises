@@ -1,0 +1,4 @@
+Hello 
+Welcome to file Manipulation in GoLang
+You have succesffuly read this file with the Read method
+Well Done

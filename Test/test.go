@@ -5,16 +5,14 @@ import (
 )
 
 func main() {
-	fmt.Println(AlphaCount("HGHGJJDFJFODJDK 1234422 !!!"))
+	s := "Hello World!"
+	fmt.Println(StrRev(s))
 }
 
-func AlphaCount(s string) int {
-	Slice := []rune(s)
-	Counter := 0
-	for i := 0; i < len(s); i++ {
-		if Slice[i] > 64 && Slice[i] < 91 || Slice[i] > 96 && Slice[i] < 123 {
-			Counter += 1
-		}
+func StrRev(s string) string {
+	var Reverse string
+	for i := len(s) - 1; i > 0; i-- {
+		Reverse += string(s[i])
 	}
-	return Counter
+	return Reverse
 }
