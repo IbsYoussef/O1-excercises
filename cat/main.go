@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"io"
 	"os"
 
 	"github.com/01-edu/z01"
@@ -34,7 +34,7 @@ func printError(args string) {
 func main() {
 	if len(os.Args) > 1 {
 		for i := 1; i < len(os.Args); i++ {
-			readFile, err := ioutil.ReadFile(os.Args[i])
+			readFile, err := os.ReadFile(os.Args[i])
 			if err != nil {
 				printError(os.Args[i])
 				os.Exit(1)
@@ -42,7 +42,7 @@ func main() {
 			printTextFile(string(readFile))
 		}
 	} else {
-		bytes, err := ioutil.ReadAll(os.Stdin)
+		bytes, err := io.ReadAll(os.Stdin)
 		if err != nil {
 			return
 		}
